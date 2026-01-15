@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Horizon – L’IA en 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --neon-cyan: #00f0ff;
+            --neon-violet: #9d00ff;
+            --text: #e0e0ff;
+        }
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            background-image: radial-gradient(circle at 10% 20%, rgba(0,240,255,0.08) 0%, transparent 20%),
+                             radial-gradient(circle at 90% 80%, rgba(157,0,255,0.08) 0%, transparent 20%);
+        }
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+            background: linear-gradient(180deg, rgba(10,10,15,0.8) 0%, var(--bg) 100%);
+        }
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3.8rem;
+            margin: 0;
+            background: linear-gradient(90deg, var(--neon-cyan), var(--neon-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(0,240,255,0.5);
+        }
+        .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.85;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .card {
+            background: rgba(20,20,35,0.6);
+            border: 1px solid rgba(0,240,255,0.15);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px 0;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,240,255,0.15);
+            border-color: var(--neon-cyan);
+        }
+        .glow-button {
+            display: inline-block;
+            padding: 14px 32px;
+            background: linear-gradient(45deg, var(--neon-cyan), var(--neon-violet));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0,240,255,0.4);
+            transition: all 0.3s;
+        }
+        .glow-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(0,240,255,0.6);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Horizon</h1>
+        <p class="subtitle">L'intelligence artificielle telle qu'on la vit en 2026</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Les agents IA autonomes</h2>
+            <p>En 2026, les agents comme Grok-3, Claude 3.7 et OpenAI o3 peuvent enchaîner des dizaines d'actions complexes sans intervention humaine : recherche, code, design, analyse...</p>
+        </div>
+
+        <div class="card">
+            <h2>Multimodalité généralisée</h2>
+            <p>Les modèles comprennent et génèrent texte, image, voix, vidéo en temps réel. L'interface devient conversationnelle et visuelle.</p>
+        </div>
+
+        <div class="card">
+            <h2>Éthique & transparence</h2>
+            <p>Les grandes entreprises publient désormais des rapports d'impact, des audits indépendants et des "model cards" détaillées.</p>
+        </div>
+
+        <div style="text-align:center; margin-top:60px;">
+            <a href="/hello" class="glow-button">Découvre mon endpoint magique →</a>
+        </div>
+    </div>
+</body>
+</html>

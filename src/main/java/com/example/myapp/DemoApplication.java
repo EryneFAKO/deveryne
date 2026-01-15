@@ -16,6 +16,14 @@ public class DemoApplication {
 class HelloController {
     @GetMapping("/hello")
     public String hello() {
-        return "Hello World!";
+        return "Hello world";
+    }
+
+    /**
+     * Racine de l'application : redirige automatiquement vers la page statique index.html
+     */
+    @GetMapping("/")
+    public String home() {
+        return "redirect:/index.html";
     }
 }
